@@ -1,0 +1,20 @@
+{
+    "name": "Steve",
+    "profession": "Software Engineer",
+    "age": "20",
+    "residence": "S.Korea",
+    "address": "S.Korea, Busan",
+    "languages": ["Uzbek", "Korean", "English"],
+    "skills": ["Html", "Css", "Js", "NodeJS", "Python"],
+    "extra-skill": ["Bootstrap, Materialize", "Styling, Sass", "Django, Flask"],
+    "work-place": "IT Company",
+    "service-desc": "Amet minim mollit non deretun ullamco est sit aliqua dolor do amet sint, Velit officia",
+    "about me": "Amet minim mollit non deretun ullamco est sit aliqua dolor do amet sint, Velit officia",
+    "city": "Busan",
+    "title": ["Flower", "Seedlings", "Gardener"],
+    "flower_desc": ["What is a Flower?", "What is a Seedlings"],
+    "flower_name": ["Tulip", "Daffodil", "Poppy"],
+    "flower_price": ["152", "25$"],
+    "famous_words": ["Wolrd is Beatiful with flowers"],
+    "famous_name": ["Steeve Jobs"]
+}
