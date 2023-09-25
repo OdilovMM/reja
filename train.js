@@ -1,72 +1,63 @@
-const moment = require("moment");
-/**@abstract
- *  D-Task: 
-Shunday class tuzing tuzing nomi Shop, va uni 
-constructoriga 3 hil mahsulot pass bolsin, hamda classning 3ta methodi bolsin,
-biri qoldiq, biri sotish va biri qabul. Har bir method ishga tushgan vaqt ham log qilinsin.
+console.log("Recommendations");
+const list = [
+  "yaxshi oqing",
+  "togri boshliq tanlang",
+  "ishlashni boshlang",
+  "bajaring",
+  "investitsiya",
+  "dam oling",
+];
 
-MASALAN: const shop = new Shop(4, 5, 2); 
-shop.qoldiq() return hozir 20:40da 4ta non, 
-5ta lagmon va 2ta cola mavjud! shop.sotish('non', 3) & 
-shop.qabul('cola', 4) & shop.qoldiq() 
-return hozir 20:50da 1ta non, 5ta lagmon va 6ta cola mavjud!
- 
- */
+// ASYNC 
 
-class Shop {
-  constructor(non, lagmon, cola) {
-    this.non = non;
-    this.lagmon = lagmon;
-    this.cola = cola;
+async function maslahatBering(a) {
+  if (typeof a !== "number") throw new Error("iltimos raqam kiriting", null);
+  else if (a <= 20) return list[0];
+  else if (a > 20 && a <= 30) return list[1];
+  else if (a > 30 && a <= 40) return list[2];
+  else if (a > 40 && a <= 50) return list[3];
+  else if (a > 50 && a <= 60) return list[4];
+  else {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve(list[5]);
+      }, 5000);
+    });
+    // return list[5];
+
+    // setTimeout(function () {
+    //     return list[5];
+    // }, 5000);
   }
+}
 
-  qoldiq() {
-    return `hozir soat ${moment().format("HH:mm")} da sizda ${
-      this.non
-    } ta non, ${this.lagmon} ta lagmon va ${this.cola} ta cola bor`;
-  }
+console.log("passed here 0");
 
-  sotish(product, value) {
-    if (this[product] >= value) {
-      this[product] -= value;
+// maslahatBering(10, (err, data) => {
+//   if (err) console.log("Error", err);
+//   else {
+//     console.log('javob');
+//   }
+// });
 
-      return `siz hozir soat ${moment().format(
-        "HH:mm"
-      )} da ${value} ta ${product} sotdingiz`;
-    } else {
-      return "sizda sotishga yetarli mahsulot yoq";
-    }
-  }
+// console.log("passed here");
+// maslahatBering(25)
+//   .then((data) => {
+//     console.log("javob");
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
 
-  qabulQilish(product, value) {
-    this[product] += value;
-    return `Hozir soat ${moment().format(
-      "HH:mm"
-    )} da ${value} ta ${product} qabul qildingiz`;
-  }
-};
+// console.log("passed here 1");
 
-const shop = new Shop(5, 5, 5);
-console.log(shop.qoldiq()); // Birinchi qoldiqni ko'rish
+//callback hell ===>>>>
 
-console.log(shop.sotish("non", 3));
+async function run() {
+  let javob = await maslahatBering(20);
+  console.log(javob);
+  javob = await maslahatBering(31);
+  console.log();
+}
 
-console.log('========================');
-console.log(shop.sotish("lagmon", 2));
-
-console.log('========================');
-console.log(shop.sotish("cola", 1));
-
-console.log('========================');
-console.log(shop.qabulQilish("non", 8));
-
-console.log('========================');
-console.log(shop.qabulQilish("lagmon", 8));
-
-console.log('========================');
-console.log(shop.qabulQilish("cola", 8));
-
-console.log('========================');
-console.log(shop.qoldiq());
-
-
+run();
