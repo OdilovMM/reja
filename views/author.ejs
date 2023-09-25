@@ -1,1 +1,351 @@
-<!-- <h2>HELLO WORLD FROM 3000 port</h2> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/main.css" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <div class="container row">
+      <div class="container__main">
+        <div class="container__main__left left__box">
+          <div class="left__box-user mt mt-small">
+            <img
+              src="/author/Profile.png"
+              class="left__box-user--img"
+              alt=""
+            />
+            <h2 class="primary-heading"><%=user.name%></h2>
+            <p class="paragraph-text"><%=user.profession%></p>
+            <ul class="left__box-user--nav">
+              <li class="left__box-user--nav---items">
+                <img src="/author/Facebook.svg" class="user__link" alt="" />
+              </li>
+              <li class="left__box-user--nav---items">
+                <img src="/author/Instagram.svg" class="user__link" alt="" />
+              </li>
+              <li class="left__box-user--nav---items">
+                <img src="/author/Twitter.svg" class="user__link" alt="" />
+              </li>
+              <li class="left__box-user--nav---items">
+                <img src="/author/Linkeding.svg" class="user__link" alt="" />
+              </li>
+              <li class="left__box-user--nav---items">
+                <img src="/author/Youtube.svg" class="user__link" alt="" />
+              </li>
+              <li class="left__box-user--nav---items">
+                <img src="/author/Dribbble.svg" class="user__link" alt="" />
+              </li>
+            </ul>
+          </div>
+          <div class="left__box-marg"></div>
+
+          <div class="left__box-info mt">
+            <div class="left__box-info--left">
+              <p class="text-paragraph">Age:</p>
+              <p class="text-paragraph">Residence:</p>
+              <p class="text-paragraph">Freelance:</p>
+              <p class="text-paragraph">Address:</p>
+            </div>
+            <div class="left__box-info--right">
+              <p class="text-data"><%=user.age%></p>
+              <p class="text-data"><%=user.residence%></p>
+              <p class="text-data active"><%=user.freelance%></p>
+              <p class="text-data"><%=user.address%></p>
+            </div>
+          </div>
+
+          <div class="left__box-marg"></div>
+          <div class="left__box-language mt">
+            <p class="content">Languages</p>
+
+            <div class="left__box-language--inner">
+              <div class="box__inner">
+                <div class="left__box-language--inner---row">
+                  <p class="paragraph"><%=user.languages[0]%></p>
+                  <p class="text">100%</p>
+                </div>
+                <img
+                  src="/author/Line100.svg"
+                  alt=""
+                  class="left__box-language--inner---img"
+                />
+              </div>
+              <div class="box__inner">
+                <div class="left__box-language--inner---row">
+                  <p class="paragraph"><%=user.languages[1]%></p>
+                  <p class="text">80%</p>
+                </div>
+                <img
+                  src="/author/Line80.svg"
+                  alt=""
+                  class="left__box-language--inner---img"
+                />
+              </div>
+              <div class="box__inner">
+                <div class="left__box-language--inner---row">
+                  <p class="paragraph"><%=user.languages[2]%></p>
+                  <p class="text">75%</p>
+                </div>
+                <img
+                  src="/author/Line60.svg"
+                  alt=""
+                  class="left__box-language--inner---img"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="left__box-marg"></div>
+          <div class="left__box-language mt">
+            <p class="content">Skills</p>
+
+            <div class="left__box-language--inner">
+              <div class="box__inner">
+                <div class="left__box-language--inner---row">
+                  <p class="paragraph"><%=user.skills[0]%></p>
+                  <p class="text">90%</p>
+                </div>
+                <img
+                  src="/author/lines/90Line.svg"
+                  alt=""
+                  class="left__box-language--inner---img"
+                />
+              </div>
+              <div class="box__inner">
+                <div class="left__box-language--inner---row">
+                  <p class="paragraph"><%=user.skills[1]%></p>
+                  <p class="text">85%</p>
+                </div>
+                <img
+                  src="/author/lines/85Line.svg"
+                  alt=""
+                  class="left__box-language--inner---img"
+                />
+              </div>
+              <div class="box__inner">
+                <div class="left__box-language--inner---row">
+                  <p class="paragraph"><%=user.skills[2]%></p>
+                  <p class="text">80%</p>
+                </div>
+                <img
+                  src="/author/lines/80Line.svg"
+                  alt=""
+                  class="left__box-language--inner---img"
+                />
+              </div>
+              <div class="box__inner">
+                <div class="left__box-language--inner---row">
+                  <p class="paragraph"><%=user.skills[3]%></p>
+                  <p class="text">75%</p>
+                </div>
+                <img
+                  src="/author/lines/75Line.svg"
+                  alt=""
+                  class="left__box-language--inner---img"
+                />
+              </div>
+              <div class="box__inner">
+                <div class="left__box-language--inner---row">
+                  <p class="paragraph"><%=user.skills[4]%></p>
+                  <p class="text">85%</p>
+                </div>
+                <img
+                  src="/author/lines/885Line.svg"
+                  alt=""
+                  class="left__box-language--inner---img"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="left__box-marg"></div>
+          <div class="left__box-extra mt">
+            <p class="title">Extra Skills</p>
+            <ul class="extra__navigation">
+              <li class="extra__navigation--list">
+                <img
+                  src="/author/sss.svg"
+                  class="extra__navigation--list---icon"
+                  alt=""
+                />Bootstrap, mterialize
+              </li>
+              <li class="extra__navigation--list">
+                <img
+                  src="/author/sss.svg"
+                  class="extra__navigation--list---icon"
+                  alt=""
+                />Stylus, Sass, Less
+              </li>
+              <li class="extra__navigation--list">
+                <img
+                  src="/author/sss.svg"
+                  class="extra__navigation--list---icon"
+                  alt=""
+                />Gulp, Wbpack, Grunt
+              </li>
+              <li class="extra__navigation--list">
+                <img
+                  src="/author/sss.svg"
+                  class="extra__navigation--list---icon"
+                  alt=""
+                />GIT knoledge
+              </li>
+            </ul>
+          </div>
+          <div class="left__box-marg"></div>
+          <button class="btn btn-primary width">
+            DOWNLOAD CV
+            <img class="frame__img" src="/author/lines/Frame.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="container__main__middle">
+          <div class="container__main__middle-upper middle__upper">
+            <div class="middle__upper-left">
+              <h2 class="heading-secondary padding-lf">
+                I'm Rayan Adlrdard <span>Front-end </span> Developer
+              </h2>
+              <p class="text-title padding-lf">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et,
+                volutpat feugiat placerat lobortis. Natoque rutrum semper sed
+                suspendisse nunc lectus.
+              </p>
+
+              <button class="btn width-sm margin-left">HIRE ME</button>
+            </div>
+
+            <div class="middle__upper--right">
+              <img src="/author/Your Image 1.png" class="hero__img" alt="" />
+            </div>
+          </div>
+
+          <div class="container__main__middle-bottom">
+            <div class="midddle__bottom-top">
+              <h2 class="title__bottom">My Services</h2>
+              <p class="title__paragraph">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit. lorem
+                ipsum
+              </p>
+            </div>
+
+            <div class="middle__bottom--bot">
+              <div class="middle__bottom--bot---item">
+                <img
+                  src="/author/grid/coding.svg"
+                  alt=""
+                  class="grid__icon"
+                />
+                <p class="grid__paragraph">Web Development</p>
+                <p class="grid-text">Blog, E-commerce</p>
+              </div>
+              <div class="middle__bottom--bot---item">
+                <img
+                  src="/author/grid/illustration.svg"
+                  alt=""
+                  class="grid__icon"
+                />
+                <p class="grid__paragraph">uI/uX design</p>
+                <p class="grid-text">Mobile app, website design</p>
+              </div>
+              <div class="middle__bottom--bot---item">
+                <img
+                  src="/author/grid/Microphone.svg"
+                  alt=""
+                  class="grid__icon"
+                />
+                <p class="grid__paragraph">sound design</p>
+                <p class="grid-text">Voice Over, Beat Making</p>
+              </div>
+              <div class="middle__bottom--bot---item">
+                <img
+                  src="/author/grid/game-development.svg"
+                  alt=""
+                  class="grid__icon"
+                />
+                <p class="grid__paragraph">game design</p>
+                <p class="grid-text">Character Design, Props & Objects</p>
+              </div>
+              <div class="middle__bottom--bot---item">
+                <img
+                  src="/author/grid/Photographer.svg"
+                  alt=""
+                  class="grid__icon"
+                />
+                <p class="grid__paragraph">Photography</p>
+                <p class="grid-text">portrait, product photography</p>
+              </div>
+              <div class="middle__bottom--bot---item">
+                <p class="grid-paragraph">Advertising</p>
+                <p class="grid__paragraph">Web Development</p>
+                <p class="grid-text">Blog, E-commerce</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container__main__right right__box">
+          <div class="right__box-nav">
+            <ul class="navigation">
+              <li class="navigation__item">
+                <a href="" class="navigation__item-link"
+                  ><img
+                    src="/author/lines/Home.svg"
+                    class="navigation__item-link--img"
+                    alt=""
+                /></a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__item-link"
+                  ><img
+                    src="/author/lines/cv.svg"
+                    class="navigation__item-link--img"
+                    alt=""
+                /></a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__item-link"
+                  ><img
+                    src="/author/lines/file-code.svg"
+                    class="navigation__item-link--img"
+                    alt=""
+                /></a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__item-link"
+                  ><img
+                    src="/author/lines/Contact.svg"
+                    class="navigation__item-link--img"
+                    alt=""
+                /></a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__item-link"
+                  ><img
+                    src="/author/lines/Portfolio.svg"
+                    class="navigation__item-link--img"
+                    alt=""
+                /></a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__item-link"
+                  ><img
+                    src="/author/lines/Contact.svg"
+                    class="navigation__item-link--img"
+                    alt=""
+                /></a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__item-link"
+                  ><img
+                    src="/author/lines/file-code.svg"
+                    class="navigation__item-link--img"
+                    alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

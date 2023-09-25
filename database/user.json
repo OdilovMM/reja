@@ -2,6 +2,7 @@
     "name": "Steve",
     "profession": "Software Engineer",
     "age": "20",
+    "freelance": "Available",
     "residence": "S.Korea",
     "address": "S.Korea, Busan",
     "languages": ["Uzbek", "Korean", "English"],
