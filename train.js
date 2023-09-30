@@ -1,3 +1,20 @@
+// TASK-E
+// E-Task: Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin masalan: getReverse("hello") return qilsin "olleh"
+
+function reverseString(str) {
+  let splitString = str.split("");
+
+  let reverseArray = splitString.reverse();
+
+  let joiningArray = reverseArray.join("");
+
+  return joiningArray;
+}
+const x = reverseString("how are you doing");
+console.log(x)
+
+/*
+
 console.log("Recommendations");
 const list = [
   "yaxshi oqing",
@@ -61,3 +78,6 @@ async function run() {
 }
 
 run();
+
+
+*/
