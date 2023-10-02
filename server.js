@@ -3,7 +3,7 @@ const mongodb = require("mongodb");
 // const app = require("./app");
 
 const connectionString =
-  "mongodb+srv://xolmuroddb:F7x3AqfsD44xuRv1@cluster0.f1yzdjj.mongodb.net/REJAA";
+  "mongodb+srv://xolmuroddb:9PUokzElWeejvXf1@cluster0.f1yzdjj.mongodb.net/REJAA";
 
 mongodb.connect(
   connectionString,
@@ -18,7 +18,7 @@ mongodb.connect(
 
       console.log(client);
       module.exports = client;
-      
+
       const app = require("./app");
       const server = http.createServer(app);
       let PORT = 3000;

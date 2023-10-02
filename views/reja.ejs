@@ -22,7 +22,7 @@
         <div class="d-flex align-items-center" >
           <input
             id="create-field"
-            name="item"
+            name="reja"
             autofocus
             action="/create-item"
             class="form__box-input--space"
@@ -35,7 +35,25 @@
       </form>
     </div>
 
-    <button id="clean-all" class="btn btn-danger" style="border-radius: 20px; display: block; border-radius: 20px; transform: translate(50px, -50px);
-" >Hamma Rejalarni ochirish</button>
+   
+
+    <ul id="item_list" class="list-group pb-5">
+      <% items.map(function(item) { %>
+      <li class="list-group-item list-group-item-info d-flex align-items-center justify-content-between">
+        <span class="item-text"><%=item.reja%></span>
+        <div>
+          <button data-id="<%=item._id%>" class="edit-me btn btn-secondary btn-sm mr-1">
+            Ozgaritirish
+          </button>
+          <button data-id="<%=item._id%>" class="edit-me btn btn-secondary btn-sm mr-1">
+            ochirish
+          </button>
+        </div>
+      </li>
+      <% }) %>
+    </ul>
+
+    <button  id="clean-all"  class="btn btn-danger" style="border-radius: 20px; display: block; border-radius: 20px; transform: translate(50px, -50px);
+" >Hammasini ochirish</button>
   </body>
 </html>
