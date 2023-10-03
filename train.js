@@ -9,6 +9,8 @@ function findDoublers(myWord) {
 
 let checkMe = findDoublers("helo");
 let checkMeToo = findDoublers("foo");
+
+//CHECK
 console.log(checkMe);
 console.log(checkMeToo);
 
