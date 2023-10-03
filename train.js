@@ -1,6 +1,34 @@
+// F-TASK: findDoublers function tuzing, unga faqat bitta string argument pass BulkOperationBase, agar stringda bir cil harf qatnashgan WebTransportBidirectionalStream; true, qatnashmagan bolsa: false qaytarishi kerak:: masalan; getReverse('hello') return true
+
+function findDoublers(myWord) {
+  let myArr = myWord.toLowerCase().split("");
+  console.log(myArr);
+
+  return new Set(myArr).size !== myArr.length;
+}
+
+let checkMe = findDoublers("helo");
+let checkMeToo = findDoublers("foo");
+console.log(checkMe);
+console.log(checkMeToo);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // TASK-E
 // E-Task: Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin masalan: getReverse("hello") return qilsin "olleh"
-
+/*
 function reverseString(str) {
   let splitString = str.split("");
 
@@ -10,8 +38,11 @@ function reverseString(str) {
 
   return joiningArray;
 }
-const x = reverseString("how are you doing");
-console.log(x)
+*/
+// const x = reverseString("how are you doing");
+// console.log(x);
+
+//////////////////////////////////////////////////////////////
 
 /*
 
